@@ -5,15 +5,6 @@
 
 This repository is a public paper-reproduction release. Cluster/Slurm wrappers are intentionally omitted; use the Python CLI below and wrap it for your own scheduler if needed.
 
-```bibtex
-@inproceedings{tdjepa2026,
-  title={Temporal-Distance JEPA: Plan-Aware Representation Learning for Latent World Model Predictive Control},
-  author={Bai, Jiaxin},
-  booktitle={Under review},
-  year={2026}
-}
-```
-
 **Author:** [Jiaxin Bai](https://github.com/marcos0318) (HKBU KnowComp)
 
 ## Setup
