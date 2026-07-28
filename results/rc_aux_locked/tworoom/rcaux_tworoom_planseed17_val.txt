@@ -1,0 +1,64 @@
+
+==== CONFIG ====
+cache_dir: null
+solver:
+  _target_: stable_worldmodel.solver.ICEMSolver
+  model: ???
+  batch_size: 1
+  num_samples: 300
+  var_scale: 1.0
+  n_steps: 30
+  topk: 30
+  noise_beta: 2.0
+  alpha: 0.1
+  n_elite_keep: 5
+  return_mean: true
+  device: cuda
+  seed: 17
+world:
+  env_name: swm/TwoRoom-v1
+  num_envs: ${eval.num_eval}
+  max_episode_steps: ???
+seed: 17
+policy: tworoom/rc_aux/seed_3072_10ep/weights_epoch_10.pt
+dataset:
+  stats: ${eval.dataset_name}
+  keys_to_cache:
+  - action
+  - proprio
+plan_config:
+  horizon: 5
+  receding_horizon: 5
+  action_block: 5
+planning_cost:
+  mode: mse
+  temperature: 0.1
+  terminal_weight: 1.0
+  mse_blend: 0.0
+eval:
+  num_eval: 50
+  goal_offset_steps: 25
+  eval_budget: 50
+  img_size: 224
+  dataset_name: tworoom
+  callables:
+  - method: _set_state
+    args:
+      state:
+        value: proprio
+  - method: _set_goal_state
+    args:
+      goal_state:
+        value: goal_proprio
+  manifest_path: eval_manifests/tworoom_val_seed20260714_n50.json
+output:
+  filename: rcaux_tworoom_planseed17_val.txt
+
+==== RESULTS ====
+metrics: {'success_rate': 100.0, 'episode_successes': array([ True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'seeds': None}
+evaluation_time: 24.57159924507141 seconds

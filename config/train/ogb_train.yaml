@@ -1,0 +1,21 @@
+# @package _global_
+# OGBench-Cube training — matches LeWM paper Appendix E (10 epochs, batch 128).
+defaults:
+  - lewm
+  - planning_eval/cube
+  - _self_
+
+trainer:
+  max_epochs: 10
+
+loader:
+  batch_size: 128
+
+# Default OGB-Cube plan cost: small latent-L2 blend (offline sweep; α∈{0.05,0.1,0.15,0.25} → 88%).
+model:
+  planning_cost_mse_blend: 0.10
+
+planning_eval:
+  enabled: true
+  planning_cost:
+    mse_blend: 0.10

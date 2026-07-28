@@ -1,0 +1,42 @@
+# @package _global_
+# In-training Two-Room planning eval (LeWM App. E/F: CEM 300 samples, 10 iterations).
+planning_eval:
+  enabled: false
+  every_n_epochs: 1
+  num_eval: 50
+  goal_offset_steps: 25
+  eval_budget: 50
+  img_size: ${img_size}
+  dataset_name: tworoom
+  seed: 42
+  keys_to_cache:
+    - action
+    - proprio
+  callables:
+    - method: _set_state
+      args:
+        state:
+          value: proprio
+    - method: _set_goal_state
+      args:
+        goal_state:
+          value: goal_proprio
+  world:
+    env_name: swm/TwoRoom-v1
+  plan_config:
+    horizon: 5
+    receding_horizon: 5
+    action_block: 5
+  planning_cost:
+    temperature: 0.1
+    terminal_weight: 0.3
+  solver:
+    _target_: stable_worldmodel.solver.CEMSolver
+    model: ???
+    batch_size: 1
+    num_samples: 300
+    var_scale: 1.0
+    n_steps: 10
+    topk: 30
+    device: cuda
+    seed: ${planning_eval.seed}

@@ -1,0 +1,8 @@
+# @package _global_
+# Variant D: MSE prediction without anti-collapse regularization.
+output_model_name: mse_only
+loss:
+  prediction:
+    name: mse
+  sigreg:
+    weight: 0.0

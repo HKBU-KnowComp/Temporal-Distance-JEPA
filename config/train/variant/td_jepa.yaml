@@ -1,0 +1,32 @@
+# @package _global_
+# TD-JEPA (canonical): plan-aware temporal-distance representation learning.
+#
+# Supervise a quasimetric distance head so d(z_state -> z_goal) ~= steps-to-goal,
+# add multi-step rollout consistency for CEM horizon alignment, and plan with the
+# same learned distance at evaluation time. One-step MSE prediction + SIGReg are
+# retained from LeWM for predictor accuracy and anti-collapse.
+#
+# num_preds=5 loads history_size + 5 frames for rollout + hindsight TD sampling.
+num_preds: 5
+output_model_name: td_jepa
+model:
+  planning_cost_mode: td_jepa
+  dist_head:
+    _target_: module.QuasimetricHead
+    input_dim: ${embed_dim}
+    hidden_dim: 512
+    sym_dim: 128
+    asym_dim: 128
+loss:
+  prediction:
+    name: mse
+    mse_weight: 0.0
+    rollout_horizon: 5
+    rollout_weight: 0.5
+    td_weight: 1.0
+    td_negative_margin_scale: 1.0
+  sigreg:
+    weight: 0.09
+planning_eval:
+  planning_cost:
+    mode: td_jepa

@@ -1,0 +1,12 @@
+plan_seed=20260714  success=78.0%  ($STABLEWM_HOME/ogb/rc_aux/seed_3072_10ep/rcaux_cube_planseed20260714_val.txt)
+plan_seed=       7  success=80.0%  ($STABLEWM_HOME/ogb/rc_aux/seed_3072_10ep/rcaux_cube_planseed7_val.txt)
+plan_seed=      11  success=84.0%  ($STABLEWM_HOME/ogb/rc_aux/seed_3072_10ep/rcaux_cube_planseed11_val.txt)
+plan_seed=      13  success=84.0%  ($STABLEWM_HOME/ogb/rc_aux/seed_3072_10ep/rcaux_cube_planseed13_val.txt)
+plan_seed=      17  success=86.0%  ($STABLEWM_HOME/ogb/rc_aux/seed_3072_10ep/rcaux_cube_planseed17_val.txt)
+plan_seed=      19  success=84.0%  ($STABLEWM_HOME/ogb/rc_aux/seed_3072_10ep/rcaux_cube_planseed19_val.txt)
+plan_seed=      23  success=82.0%  ($STABLEWM_HOME/ogb/rc_aux/seed_3072_10ep/rcaux_cube_planseed23_val.txt)
+plan_seed=      29  success=78.0%  ($STABLEWM_HOME/ogb/rc_aux/seed_3072_10ep/rcaux_cube_planseed29_val.txt)
+plan_seed=      31  success=80.0%  ($STABLEWM_HOME/ogb/rc_aux/seed_3072_10ep/rcaux_cube_planseed31_val.txt)
+plan_seed=      37  success=80.0%  ($STABLEWM_HOME/ogb/rc_aux/seed_3072_10ep/rcaux_cube_planseed37_val.txt)
+
+cube RC-aux (train seed 3072, locked 10 plan seeds, ep10): 81.6% ± 2.8%

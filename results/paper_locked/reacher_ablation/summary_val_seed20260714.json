@@ -1,0 +1,114 @@
+[
+  {
+    "file": "logs/reacher_matrix_52850_0.out",
+    "method": "td_jepa",
+    "protocol": "cem10_w1",
+    "cost_diag": "native",
+    "success_rate": 82.0
+  },
+  {
+    "file": "logs/reacher_matrix_52850_1.out",
+    "method": "td_jepa",
+    "protocol": "cem30_w1",
+    "cost_diag": "native",
+    "success_rate": 74.0
+  },
+  {
+    "file": "logs/reacher_matrix_52850_2.out",
+    "method": "td_jepa",
+    "protocol": "cem30_w03",
+    "cost_diag": "native",
+    "success_rate": 96.0
+  },
+  {
+    "file": "logs/reacher_matrix_52850_3.out",
+    "method": "td_jepa",
+    "protocol": "icem30_w03",
+    "cost_diag": "native",
+    "success_rate": 96.0
+  },
+  {
+    "file": "logs/reacher_matrix_52850_4.out",
+    "method": "td_jepa_v2_fix",
+    "protocol": "cem10_w1",
+    "cost_diag": "native",
+    "success_rate": 82.0
+  },
+  {
+    "file": "logs/reacher_matrix_52861_5.out",
+    "method": "td_jepa_v2_fix",
+    "protocol": "cem30_w1",
+    "cost_diag": "native",
+    "success_rate": 80.0
+  },
+  {
+    "file": "logs/reacher_matrix_52861_6.out",
+    "method": "td_jepa_v2_fix",
+    "protocol": "cem30_w03",
+    "cost_diag": "native",
+    "success_rate": 88.0
+  },
+  {
+    "file": "logs/reacher_matrix_52861_7.out",
+    "method": "td_jepa_v2_fix",
+    "protocol": "icem30_w03",
+    "cost_diag": "native",
+    "success_rate": 90.0
+  },
+  {
+    "file": "logs/reacher_matrix_52861_8.out",
+    "method": "lewm",
+    "protocol": "cem10_w1",
+    "cost_diag": "native",
+    "success_rate": 86.0
+  },
+  {
+    "file": "logs/reacher_matrix_52861_9.out",
+    "method": "lewm",
+    "protocol": "cem30_w1",
+    "cost_diag": "native",
+    "success_rate": 86.0
+  },
+  {
+    "file": "logs/reacher_matrix_52869_10.out",
+    "method": "lewm",
+    "protocol": "cem30_w03",
+    "cost_diag": "native",
+    "success_rate": 94.0
+  },
+  {
+    "file": "logs/reacher_matrix_52869_11.out",
+    "method": "lewm",
+    "protocol": "icem30_w03",
+    "cost_diag": "native",
+    "success_rate": 94.0
+  },
+  {
+    "file": "logs/reacher_matrix_52869_12.out",
+    "method": "td_jepa",
+    "protocol": "cem30_w1",
+    "cost_diag": "mse",
+    "success_rate": 88.0
+  },
+  {
+    "file": "logs/reacher_matrix_52869_13.out",
+    "method": "td_jepa",
+    "protocol": "cem30_w1",
+    "cost_diag": "blend005",
+    "success_rate": 80.0
+  },
+  {
+    "file": "logs/reacher_matrix_52869_14.out",
+    "method": "td_jepa",
+    "protocol": "cem30_w1",
+    "cost_diag": "blend010",
+    "success_rate": 82.0
+  },
+  {
+    "file": "logs/reacher_matrix_52874_15.out",
+    "method": "td_jepa",
+    "protocol": "cem30_w1",
+    "cost_diag": "blend025",
+    "success_rate": 84.0
+  }
+]

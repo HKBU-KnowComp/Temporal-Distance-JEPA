@@ -1,0 +1,12 @@
+plan_seed=20260714  success=82.0%  ($STABLEWM_HOME/pusht/rc_aux/seed_3072_10ep/rcaux_pusht_planseed20260714_val.txt)
+plan_seed=       7  success=82.0%  ($STABLEWM_HOME/pusht/rc_aux/seed_3072_10ep/rcaux_pusht_planseed7_val.txt)
+plan_seed=      11  success=84.0%  ($STABLEWM_HOME/pusht/rc_aux/seed_3072_10ep/rcaux_pusht_planseed11_val.txt)
+plan_seed=      13  success=80.0%  ($STABLEWM_HOME/pusht/rc_aux/seed_3072_10ep/rcaux_pusht_planseed13_val.txt)
+plan_seed=      17  success=80.0%  ($STABLEWM_HOME/pusht/rc_aux/seed_3072_10ep/rcaux_pusht_planseed17_val.txt)
+plan_seed=      19  success=80.0%  ($STABLEWM_HOME/pusht/rc_aux/seed_3072_10ep/rcaux_pusht_planseed19_val.txt)
+plan_seed=      23  success=78.0%  ($STABLEWM_HOME/pusht/rc_aux/seed_3072_10ep/rcaux_pusht_planseed23_val.txt)
+plan_seed=      29  success=82.0%  ($STABLEWM_HOME/pusht/rc_aux/seed_3072_10ep/rcaux_pusht_planseed29_val.txt)
+plan_seed=      31  success=84.0%  ($STABLEWM_HOME/pusht/rc_aux/seed_3072_10ep/rcaux_pusht_planseed31_val.txt)
+plan_seed=      37  success=82.0%  ($STABLEWM_HOME/pusht/rc_aux/seed_3072_10ep/rcaux_pusht_planseed37_val.txt)
+
+pusht RC-aux (train seed 3072, locked 10 plan seeds, ep10): 81.4% ± 1.9%

@@ -1,0 +1,46 @@
+{
+  "policy": "pusht/td_jepa/seed_3072_10ep/weights_epoch_10.pt",
+  "seed": 3072,
+  "num_eval": 1,
+  "results": [
+    {
+      "label": "dpsi",
+      "mode": "td_jepa",
+      "mse_blend": 0.0,
+      "success_rate": 100.0,
+      "metrics": {
+        "success_rate": 100.0,
+        "episode_successes": "[ True]",
+        "seeds": null
+      },
+      "video_path": "logs/pusht_failure_videos/td_jepa_seed3072_ep10/dpsi",
+      "time_s": 1.3444640636444092
+    },
+    {
+      "label": "l2",
+      "mode": "mse",
+      "mse_blend": null,
+      "success_rate": 100.0,
+      "metrics": {
+        "success_rate": 100.0,
+        "episode_successes": "[ True]",
+        "seeds": null
+      },
+      "video_path": "logs/pusht_failure_videos/td_jepa_seed3072_ep10/l2",
+      "time_s": 1.644820213317871
+    },
+    {
+      "label": "blend_0.1",
+      "mode": "td_jepa",
+      "mse_blend": 0.1,
+      "success_rate": 100.0,
+      "metrics": {
+        "success_rate": 100.0,
+        "episode_successes": "[ True]",
+        "seeds": null
+      },
+      "video_path": "logs/pusht_failure_videos/td_jepa_seed3072_ep10/blend_0.1",
+      "time_s": 1.5663585662841797
+    }
+  ]
+}

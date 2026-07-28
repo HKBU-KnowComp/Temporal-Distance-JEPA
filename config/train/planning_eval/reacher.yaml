@@ -1,0 +1,44 @@
+# @package _global_
+# In-training Reacher planning eval (LeWM App. E/F: CEM 300 samples, 10 iterations).
+planning_eval:
+  enabled: false
+  every_n_epochs: 1
+  num_eval: 50
+  goal_offset_steps: 25
+  eval_budget: 50
+  img_size: ${img_size}
+  dataset_name: dmc/reacher_random
+  seed: 42
+  keys_to_cache:
+    - action
+  callables:
+    - method: set_state
+      args:
+        qpos:
+          value: qpos
+        qvel:
+          value: qvel
+    - method: set_target_qpos
+      args:
+        target_qpos:
+          value: goal_qpos
+  world:
+    env_name: swm/ReacherDMControl-v0
+    task: qpos_match
+  plan_config:
+    horizon: 5
+    receding_horizon: 5
+    action_block: 5
+  planning_cost:
+    temperature: 0.1
+    terminal_weight: 0.3
+  solver:
+    _target_: stable_worldmodel.solver.CEMSolver
+    model: ???
+    batch_size: 1
+    num_samples: 300
+    var_scale: 1.0
+    n_steps: 10
+    topk: 30
+    device: cuda
+    seed: ${planning_eval.seed}

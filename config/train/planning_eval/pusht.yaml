@@ -1,0 +1,47 @@
+# @package _global_
+# Optional in-training PushT planning evaluation after each epoch.
+planning_eval:
+  enabled: false
+  every_n_epochs: 1
+  num_eval: 50
+  goal_offset_steps: 25
+  eval_budget: 50
+  img_size: ${img_size}
+  dataset_name: pusht_expert_train
+  seed: 42
+  keys_to_cache:
+    - action
+    - proprio
+    - state
+  callables:
+    - method: _set_state
+      args:
+        state:
+          value: state
+    - method: _set_goal_state
+      args:
+        goal_state:
+          value: goal_state
+  world:
+    env_name: swm/PushT-v1
+  plan_config:
+    horizon: 5
+    receding_horizon: 5
+    action_block: 5
+  planning_cost:
+    temperature: 0.1
+    terminal_weight: 0.3
+  solver:
+    _target_: stable_worldmodel.solver.ICEMSolver
+    model: ???
+    batch_size: 1
+    num_samples: 300
+    var_scale: 1.0
+    n_steps: 30
+    topk: 30
+    noise_beta: 2.0
+    alpha: 0.1
+    n_elite_keep: 5
+    return_mean: true
+    device: cuda
+    seed: ${planning_eval.seed}

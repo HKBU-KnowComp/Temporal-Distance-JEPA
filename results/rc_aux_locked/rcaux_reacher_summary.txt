@@ -1,0 +1,12 @@
+plan_seed=20260714  success=96.0%  ($STABLEWM_HOME/dmc/rc_aux/seed_3072_10ep/rcaux_reacher_planseed20260714_val.txt)
+plan_seed=       7  success=96.0%  ($STABLEWM_HOME/dmc/rc_aux/seed_3072_10ep/rcaux_reacher_planseed7_val.txt)
+plan_seed=      11  success=94.0%  ($STABLEWM_HOME/dmc/rc_aux/seed_3072_10ep/rcaux_reacher_planseed11_val.txt)
+plan_seed=      13  success=98.0%  ($STABLEWM_HOME/dmc/rc_aux/seed_3072_10ep/rcaux_reacher_planseed13_val.txt)
+plan_seed=      17  success=96.0%  ($STABLEWM_HOME/dmc/rc_aux/seed_3072_10ep/rcaux_reacher_planseed17_val.txt)
+plan_seed=      19  success=98.0%  ($STABLEWM_HOME/dmc/rc_aux/seed_3072_10ep/rcaux_reacher_planseed19_val.txt)
+plan_seed=      23  success=98.0%  ($STABLEWM_HOME/dmc/rc_aux/seed_3072_10ep/rcaux_reacher_planseed23_val.txt)
+plan_seed=      29  success=98.0%  ($STABLEWM_HOME/dmc/rc_aux/seed_3072_10ep/rcaux_reacher_planseed29_val.txt)
+plan_seed=      31  success=96.0%  ($STABLEWM_HOME/dmc/rc_aux/seed_3072_10ep/rcaux_reacher_planseed31_val.txt)
+plan_seed=      37  success=98.0%  ($STABLEWM_HOME/dmc/rc_aux/seed_3072_10ep/rcaux_reacher_planseed37_val.txt)
+
+reacher RC-aux (train seed 3072, locked 10 plan seeds, ep10): 96.8% ± 1.4%

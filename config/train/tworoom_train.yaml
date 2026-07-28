@@ -1,0 +1,15 @@
+# @package _global_
+# Two-Room training — matches LeWM paper Appendix E (10 epochs, batch 128).
+defaults:
+  - lewm
+  - planning_eval/tworoom
+  - _self_
+
+trainer:
+  max_epochs: 10
+
+loader:
+  batch_size: 128
+
+planning_eval:
+  enabled: true

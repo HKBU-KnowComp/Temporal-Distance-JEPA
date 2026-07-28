@@ -1,0 +1,11 @@
+einops
+hydra-core
+lightning
+numpy
+omegaconf
+scikit-learn
+stable-pretraining
+stable-worldmodel
+torch
+torchvision
+wandb

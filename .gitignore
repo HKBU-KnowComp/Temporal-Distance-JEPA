@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+outputs/
+logs/
+checkpoints/
+wandb/
+wandb_resume.json
+*.pt
+*_object.ckpt
+slurm-*.out
+*.code-workspace
+.DS_Store

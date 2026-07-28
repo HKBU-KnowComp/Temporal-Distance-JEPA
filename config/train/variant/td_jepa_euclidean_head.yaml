@@ -1,0 +1,26 @@
+# @package _global_
+# Ablation: replace TD-JEPA's directed head with a symmetric Euclidean head.
+# The temporal labels, rollout consistency, negative hinge, SIGReg, and planner
+# interface are unchanged so this isolates the directed-cost parameterization.
+num_preds: 5
+output_model_name: td_jepa_euclidean_head
+model:
+  planning_cost_mode: td_jepa
+  dist_head:
+    _target_: module.EuclideanDistanceHead
+    input_dim: ${embed_dim}
+    hidden_dim: 512
+    metric_dim: 128
+loss:
+  prediction:
+    name: mse
+    mse_weight: 0.0
+    rollout_horizon: 5
+    rollout_weight: 0.5
+    td_weight: 1.0
+    td_negative_margin_scale: 1.0
+  sigreg:
+    weight: 0.09
+planning_eval:
+  planning_cost:
+    mode: td_jepa

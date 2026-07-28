@@ -1,0 +1,55 @@
+# @package _global_
+# In-training OGBench-Cube planning eval (LeWM App. E/F: CEM 300 samples, 10 iterations).
+planning_eval:
+  enabled: false
+  every_n_epochs: 1
+  num_eval: 50
+  goal_offset_steps: 25
+  eval_budget: 50
+  img_size: ${img_size}
+  dataset_name: ogbench/cube_single_expert
+  seed: 42
+  keys_to_cache:
+    - action
+  callables:
+    - method: set_state
+      args:
+        qpos:
+          value: qpos
+        qvel:
+          value: qvel
+    - method: set_target_pos
+      args:
+        cube_id:
+          value: 0
+          in_dataset: false
+        target_pos:
+          value: goal_privileged_block_0_pos
+        target_quat:
+          value: goal_privileged_block_0_quat
+  world:
+    env_name: swm/OGBCube-v0
+    env_type: single
+    ob_type: states
+    multiview: false
+    width: 224
+    height: 224
+    visualize_info: false
+    terminate_at_goal: true
+  plan_config:
+    horizon: 5
+    receding_horizon: 5
+    action_block: 5
+  planning_cost:
+    temperature: 0.1
+    terminal_weight: 0.3
+  solver:
+    _target_: stable_worldmodel.solver.CEMSolver
+    model: ???
+    batch_size: 1
+    num_samples: 300
+    var_scale: 1.0
+    n_steps: 10
+    topk: 30
+    device: cuda
+    seed: ${planning_eval.seed}

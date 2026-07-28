@@ -1,0 +1,66 @@
+defaults:
+  - _self_
+  - launcher: local
+  - data: pusht
+  - model: lewm
+  - variant: lewm
+
+output_model_name: lewm
+subdir: ${hydra:job.id}
+
+num_workers: 2
+train_split: 0.9
+seed: 3072
+img_size: 224
+embed_dim: 192
+history_size: 3
+diagnostics_interval: 100
+log_every_n_steps: 50
+checkpoint_epoch_interval: 1
+checkpoint_keep_last: 0
+
+trainer:
+  max_epochs: 100
+  devices: auto
+  accelerator: gpu
+  strategy: auto
+  precision: bf16-mixed
+  gradient_clip_val: 1.0
+  # Effective batch = loader.batch_size * accumulate_grad_batches (Lightning).
+  accumulate_grad_batches: 1
+  enable_checkpointing: false
+  enable_progress_bar: true
+  log_every_n_steps: 50
+
+loader:
+  batch_size: 64
+  num_workers: ${num_workers}
+  persistent_workers: True
+  prefetch_factor: 2
+  pin_memory: True
+
+optimizer:
+  type: AdamW
+  lr: 5e-5
+  weight_decay: 1e-3
+
+num_preds: 1
+
+loss:
+  prediction:
+    name: mse
+    temperature: 0.1
+    label_smoothing: 0.1
+    normalize: true
+    latent_norm: none
+    energy: dot_product
+    queue_size: 0
+    temporal_exclusion_window: 0
+    mse_weight: 0.0
+    rollout_horizon: 0
+    rollout_weight: 0.0
+  sigreg:
+    weight: 0.09
+    kwargs:
+      knots: 17
+      num_proj: 1024

@@ -1,0 +1,73 @@
+
+==== CONFIG ====
+cache_dir: null
+solver:
+  _target_: stable_worldmodel.solver.CEMSolver
+  model: ???
+  batch_size: 1
+  num_samples: 300
+  var_scale: 1.0
+  n_steps: 10
+  topk: 30
+  device: cuda
+  seed: 31
+world:
+  env_name: swm/OGBCube-v0
+  num_envs: ${eval.num_eval}
+  max_episode_steps: ???
+  env_type: single
+  ob_type: states
+  multiview: false
+  width: 224
+  height: 224
+  visualize_info: false
+  terminate_at_goal: true
+dataset:
+  stats: ${eval.dataset_name}
+  keys_to_cache:
+  - action
+seed: 31
+policy: ogb/rc_aux/seed_3072_10ep/weights_epoch_10.pt
+plan_config:
+  horizon: 5
+  receding_horizon: 5
+  action_block: 5
+planning_cost:
+  mode: mse
+  temperature: 0.1
+  terminal_weight: 1.0
+  mse_blend: 0.0
+eval:
+  num_eval: 50
+  goal_offset_steps: 25
+  eval_budget: 50
+  img_size: 224
+  dataset_name: ogbench/cube_single_expert
+  callables:
+  - method: set_state
+    args:
+      qpos:
+        value: qpos
+      qvel:
+        value: qvel
+  - method: set_target_pos
+    args:
+      cube_id:
+        value: 0
+        in_dataset: false
+      target_pos:
+        value: goal_privileged_block_0_pos
+      target_quat:
+        value: goal_privileged_block_0_quat
+  manifest_path: eval_manifests/ogbench_cube_single_expert_val_seed20260714_n50.json
+output:
+  filename: rcaux_cube_planseed31_val.txt
+
+==== RESULTS ====
+metrics: {'success_rate': 80.0, 'episode_successes': array([False,  True,  True,  True, False,  True, False,  True,  True,
+        True,  True,  True, False,  True,  True,  True, False,  True,
+        True,  True, False, False,  True,  True,  True, False,  True,
+        True,  True,  True,  True,  True, False,  True,  True,  True,
+       False,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'seeds': None}
+evaluation_time: 28.702672004699707 seconds

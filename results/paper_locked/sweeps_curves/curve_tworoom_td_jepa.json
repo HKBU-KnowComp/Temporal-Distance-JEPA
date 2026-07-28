@@ -1,0 +1,48 @@
+{
+  "env": "tworoom",
+  "run": "tworoom/temporal_distance/seed_3072_10ep",
+  "seed": 3072,
+  "mse_blend": null,
+  "epochs": [
+    {
+      "epoch": 1,
+      "success_rate": 34.0
+    },
+    {
+      "epoch": 2,
+      "success_rate": 26.0
+    },
+    {
+      "epoch": 3,
+      "success_rate": 16.0
+    },
+    {
+      "epoch": 4,
+      "success_rate": 30.0
+    },
+    {
+      "epoch": 5,
+      "success_rate": 74.0
+    },
+    {
+      "epoch": 6,
+      "success_rate": 90.0
+    },
+    {
+      "epoch": 7,
+      "success_rate": 98.0
+    },
+    {
+      "epoch": 8,
+      "success_rate": 98.0
+    },
+    {
+      "epoch": 9,
+      "success_rate": 100.0
+    },
+    {
+      "epoch": 10,
+      "success_rate": 100.0
+    }
+  ]
+}

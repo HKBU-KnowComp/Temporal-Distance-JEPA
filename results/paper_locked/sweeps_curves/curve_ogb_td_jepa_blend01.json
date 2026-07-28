@@ -1,0 +1,48 @@
+{
+  "env": "ogb",
+  "run": "ogb/temporal_distance/seed_3072_10ep",
+  "seed": 3072,
+  "mse_blend": 0.1,
+  "epochs": [
+    {
+      "epoch": 1,
+      "success_rate": 60.0
+    },
+    {
+      "epoch": 2,
+      "success_rate": 88.0
+    },
+    {
+      "epoch": 3,
+      "success_rate": 88.0
+    },
+    {
+      "epoch": 4,
+      "success_rate": 86.0
+    },
+    {
+      "epoch": 5,
+      "success_rate": 88.0
+    },
+    {
+      "epoch": 6,
+      "success_rate": 82.0
+    },
+    {
+      "epoch": 7,
+      "success_rate": 84.0
+    },
+    {
+      "epoch": 8,
+      "success_rate": 88.0
+    },
+    {
+      "epoch": 9,
+      "success_rate": 88.0
+    },
+    {
+      "epoch": 10,
+      "success_rate": 88.0
+    }
+  ]
+}

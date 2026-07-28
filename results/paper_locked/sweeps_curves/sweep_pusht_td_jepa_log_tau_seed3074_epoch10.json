@@ -1,0 +1,67 @@
+{
+  "env": "pusht",
+  "policy": "pusht/td_jepa_log_tau/seed_3074_10ep/weights_epoch_10.pt",
+  "seed": 3074,
+  "results": [
+    {
+      "mode": "mse",
+      "mse_blend": null,
+      "success_rate": 78.0,
+      "time_s": 61.03673243522644
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.0,
+      "success_rate": 62.0,
+      "time_s": 68.45464587211609
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.05,
+      "success_rate": 80.0,
+      "time_s": 63.08675980567932
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.1,
+      "success_rate": 80.0,
+      "time_s": 62.4374463558197
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.15,
+      "success_rate": 72.0,
+      "time_s": 63.879180908203125
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.25,
+      "success_rate": 76.0,
+      "time_s": 63.00776553153992
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.5,
+      "success_rate": 78.0,
+      "time_s": 60.55783414840698
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.75,
+      "success_rate": 80.0,
+      "time_s": 58.54184007644653
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 1.0,
+      "success_rate": 80.0,
+      "time_s": 58.470545291900635
+    }
+  ],
+  "best": {
+    "mode": "td_jepa",
+    "mse_blend": 0.05,
+    "success_rate": 80.0,
+    "time_s": 63.08675980567932
+  }
+}

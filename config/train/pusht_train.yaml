@@ -1,0 +1,22 @@
+# @package _global_
+# Short PushT run for smoke tests and debugging.
+defaults:
+  - lewm
+  - planning_eval/pusht
+  - _self_
+
+trainer:
+  max_epochs: 10
+
+loader:
+  batch_size: 128
+
+# Default Push-T plan cost: small latent-L2 blend (replanning sweep; α∈{0.05,0.1,0.15} → 92%).
+# Navigation envs use tworoom_train / dmc_train without this override.
+model:
+  planning_cost_mse_blend: 0.10
+
+planning_eval:
+  enabled: true
+  planning_cost:
+    mse_blend: 0.10

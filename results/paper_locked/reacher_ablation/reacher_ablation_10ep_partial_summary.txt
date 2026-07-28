@@ -1,0 +1,32 @@
+
+Missing 9/36:
+  no_rollout/icem30_w03/ps20260714
+  no_rollout/icem30_w03/ps7
+  no_rollout/icem30_w03/ps11
+  no_rollout/cem30_w03/ps20260714
+  no_rollout/cem30_w03/ps7
+  no_rollout/cem30_w03/ps11
+  no_rollout/cem30_w1/ps20260714
+  no_rollout/cem30_w1/ps7
+  no_rollout/cem30_w1/ps11
+Reacher 10ep ablations (locked n50 val, 3 plan seeds)
+Variant      Protocol     mean+/-std       values
+----------------------------------------------------------------
+full         icem30_w03    98.7+/-2.3    [96.0, 100.0, 100.0]
+full         cem30_w03     93.3+/-3.1    [94.0, 96.0, 90.0]
+full         cem30_w1      80.0+/-5.3    [76.0, 78.0, 86.0]
+euclidean    icem30_w03    94.7+/-3.1    [94.0, 98.0, 92.0]
+euclidean    cem30_w03     92.0+/-2.0    [94.0, 90.0, 92.0]
+euclidean    cem30_w1      78.7+/-4.6    [84.0, 76.0, 76.0]
+hinge_off    icem30_w03    96.7+/-2.3    [98.0, 98.0, 94.0]
+hinge_off    cem30_w03     94.0+/-2.0    [94.0, 92.0, 96.0]
+hinge_off    cem30_w1      86.7+/-4.2    [82.0, 88.0, 90.0]
+no_rollout   icem30_w03   ---
+no_rollout   cem30_w03    ---
+no_rollout   cem30_w1     ---
+
+Primary (icem30_w03):
+  full: 98.7+/-2.3
+  euclidean: 94.7+/-3.1
+  hinge_off: 96.7+/-2.3
+  no_rollout: ---

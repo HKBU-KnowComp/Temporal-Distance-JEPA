@@ -1,0 +1,8 @@
+# @package _global_
+# Variant A: LeWM baseline, MSE prediction plus SIGReg.
+output_model_name: lewm
+loss:
+  prediction:
+    name: mse
+  sigreg:
+    weight: 0.09

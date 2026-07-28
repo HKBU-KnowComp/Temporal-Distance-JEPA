@@ -1,0 +1,66 @@
+
+==== CONFIG ====
+cache_dir: null
+solver:
+  _target_: stable_worldmodel.solver.ICEMSolver
+  model: ???
+  batch_size: 1
+  num_samples: 300
+  var_scale: 1.0
+  n_steps: 30
+  topk: 30
+  noise_beta: 2.0
+  alpha: 0.1
+  n_elite_keep: 5
+  return_mean: true
+  device: cuda
+  seed: 17
+world:
+  env_name: swm/ReacherDMControl-v0
+  num_envs: ${eval.num_eval}
+  max_episode_steps: ???
+  task: qpos_match
+dataset:
+  stats: ${eval.dataset_name}
+  keys_to_cache:
+  - action
+seed: 17
+policy: dmc/rc_aux/seed_3072_10ep/weights_epoch_10.pt
+plan_config:
+  horizon: 5
+  receding_horizon: 5
+  action_block: 5
+planning_cost:
+  mode: mse
+  temperature: 0.1
+  terminal_weight: 0.3
+  mse_blend: 0.0
+eval:
+  num_eval: 50
+  goal_offset_steps: 25
+  eval_budget: 50
+  img_size: 224
+  dataset_name: dmc/reacher_random
+  callables:
+  - method: set_state
+    args:
+      qpos:
+        value: qpos
+      qvel:
+        value: qvel
+  - method: set_target_qpos
+    args:
+      target_qpos:
+        value: goal_qpos
+  manifest_path: eval_manifests/dmc_reacher_random_val_seed20260714_n50.json
+output:
+  filename: rcaux_reacher_planseed17_val.txt
+
+==== RESULTS ====
+metrics: {'success_rate': 96.0, 'episode_successes': array([False,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True, False,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True]), 'seeds': None}
+evaluation_time: 509.64233207702637 seconds

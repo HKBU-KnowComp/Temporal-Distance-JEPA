@@ -1,0 +1,67 @@
+{
+  "env": "pusht",
+  "policy": "pusht/td_jepa_neargoal_weighted/seed_3072_10ep/weights_epoch_10.pt",
+  "seed": 3072,
+  "results": [
+    {
+      "mode": "mse",
+      "mse_blend": null,
+      "success_rate": 84.0,
+      "time_s": 47.58947992324829
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.0,
+      "success_rate": 64.0,
+      "time_s": 51.37927722930908
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.05,
+      "success_rate": 84.0,
+      "time_s": 48.96863913536072
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.1,
+      "success_rate": 80.0,
+      "time_s": 47.01232051849365
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.15,
+      "success_rate": 84.0,
+      "time_s": 49.737828969955444
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.25,
+      "success_rate": 82.0,
+      "time_s": 46.81016278266907
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.5,
+      "success_rate": 88.0,
+      "time_s": 48.2161169052124
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 0.75,
+      "success_rate": 80.0,
+      "time_s": 49.092060565948486
+    },
+    {
+      "mode": "td_jepa",
+      "mse_blend": 1.0,
+      "success_rate": 86.0,
+      "time_s": 48.29852843284607
+    }
+  ],
+  "best": {
+    "mode": "td_jepa",
+    "mse_blend": 0.5,
+    "success_rate": 88.0,
+    "time_s": 48.2161169052124
+  }
+}

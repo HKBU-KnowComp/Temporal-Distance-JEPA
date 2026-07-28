@@ -1,0 +1,86 @@
+{
+  "tworoom": {
+    "env": "Two-Room",
+    "protocol": "iCEM-30, latent L2, w=1",
+    "mean": 98.6,
+    "std": 1.0,
+    "n": 10,
+    "train_seed": 3072,
+    "plan_seeds": {
+      "20260714": 100.0,
+      "7": 98.0,
+      "11": 98.0,
+      "13": 100.0,
+      "17": 100.0,
+      "19": 98.0,
+      "23": 98.0,
+      "29": 98.0,
+      "31": 98.0,
+      "37": 98.0
+    },
+    "checkpoint": "tworoom/rc_aux/seed_3072_10ep/weights_epoch_10.pt"
+  },
+  "reacher": {
+    "env": "Reacher",
+    "protocol": "iCEM-30, latent L2, w=0.3",
+    "mean": 96.8,
+    "std": 1.4,
+    "n": 10,
+    "train_seed": 3072,
+    "plan_seeds": {
+      "20260714": 96.0,
+      "7": 96.0,
+      "11": 94.0,
+      "13": 98.0,
+      "17": 96.0,
+      "19": 98.0,
+      "23": 98.0,
+      "29": 98.0,
+      "31": 96.0,
+      "37": 98.0
+    },
+    "checkpoint": "dmc/rc_aux/seed_3072_10ep/weights_epoch_10.pt"
+  },
+  "pusht": {
+    "env": "Push-T",
+    "protocol": "CEM-30, latent L2, w=1",
+    "mean": 81.4,
+    "std": 1.9,
+    "n": 10,
+    "train_seed": 3072,
+    "plan_seeds": {
+      "20260714": 82.0,
+      "7": 82.0,
+      "11": 84.0,
+      "13": 80.0,
+      "17": 80.0,
+      "19": 80.0,
+      "23": 78.0,
+      "29": 82.0,
+      "31": 84.0,
+      "37": 82.0
+    },
+    "checkpoint": "pusht/rc_aux/seed_3072_10ep/weights_epoch_10.pt"
+  },
+  "cube": {
+    "env": "OGB-Cube",
+    "protocol": "CEM-10, latent L2, w=1",
+    "mean": 81.6,
+    "std": 2.8,
+    "n": 10,
+    "train_seed": 3072,
+    "plan_seeds": {
+      "20260714": 78.0,
+      "7": 80.0,
+      "11": 84.0,
+      "13": 84.0,
+      "17": 86.0,
+      "19": 84.0,
+      "23": 82.0,
+      "29": 78.0,
+      "31": 80.0,
+      "37": 80.0
+    },
+    "checkpoint": "ogb/rc_aux/seed_3072_10ep/weights_epoch_10.pt"
+  }
+}

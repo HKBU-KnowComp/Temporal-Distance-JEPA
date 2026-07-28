@@ -1,0 +1,17 @@
+# @package _global_
+
+defaults:
+  - override /hydra/launcher: basic
+
+wandb:
+  enabled: true
+  config:
+    # Set your WandB entity before training, e.g.:
+    #   wandb.config.entity=your_entity
+    entity: null
+    project: td-jepa
+    name: ${output_model_name}
+    group: null
+    resume: never
+    log_model: false
+    tags: []

@@ -1,0 +1,624 @@
+{
+  "protocol": {
+    "planning_seeds": [
+      20260714,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37
+    ],
+    "episodes": "locked 50-episode validation manifests",
+    "checkpoint": "TD-JEPA epoch 10, training seed 3072",
+    "costs": [
+      "dpsi",
+      "l2",
+      "blend010"
+    ],
+    "note": "Only the plan cost changes within each environment; checkpoint, episodes, solver, planning budget, and checkpoint rule are fixed."
+  },
+  "complete": true,
+  "completed_cells": 120,
+  "total_cells": 120,
+  "missing": [],
+  "matrix": {
+    "tworoom": {
+      "dpsi": {
+        "display_name": "d_psi",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ],
+        "mean_percent": 100.0,
+        "std_percent": 0.0,
+        "paths": [
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/tab4_td_jepa_tworoom_planseed20260714_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/tab4_td_jepa_tworoom_planseed7_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/tab4_td_jepa_tworoom_planseed11_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/tab4_td_jepa_tworoom_planseed13_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/tab4_td_jepa_tworoom_planseed17_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/tab4_td_jepa_tworoom_planseed19_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/tab4_td_jepa_tworoom_planseed23_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/tab4_td_jepa_tworoom_planseed29_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/tab4_td_jepa_tworoom_planseed31_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/tab4_td_jepa_tworoom_planseed37_val.txt"
+        ]
+      },
+      "l2": {
+        "display_name": "latent_l2",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          100.0,
+          100.0,
+          96.0,
+          100.0,
+          98.0,
+          98.0,
+          100.0,
+          100.0,
+          100.0,
+          98.0
+        ],
+        "mean_percent": 99.0,
+        "std_percent": 1.4142135623730951,
+        "paths": [
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_l2_planseed20260714_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_l2_planseed7_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_l2_planseed11_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_l2_planseed13_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_l2_planseed17_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_l2_planseed19_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_l2_planseed23_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_l2_planseed29_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_l2_planseed31_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_l2_planseed37_val.txt"
+        ]
+      },
+      "blend010": {
+        "display_name": "blend_alpha_0.10",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ],
+        "mean_percent": 100.0,
+        "std_percent": 0.0,
+        "paths": [
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_blend010_planseed20260714_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_blend010_planseed7_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_blend010_planseed11_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_blend010_planseed13_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_blend010_planseed17_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_blend010_planseed19_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_blend010_planseed23_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_blend010_planseed29_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_blend010_planseed31_val.txt",
+          "$STABLEWM_HOME/tworoom/temporal_distance/seed_3072_10ep/costcomp_tworoom_blend010_planseed37_val.txt"
+        ]
+      }
+    },
+    "reacher": {
+      "dpsi": {
+        "display_name": "d_psi",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          94.0,
+          100.0,
+          100.0,
+          96.0,
+          94.0,
+          96.0,
+          96.0,
+          100.0,
+          98.0,
+          96.0
+        ],
+        "mean_percent": 97.0,
+        "std_percent": 2.3570226039551585,
+        "paths": [
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/tab4_td_jepa_reacher_planseed20260714_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/tab4_td_jepa_reacher_planseed7_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/tab4_td_jepa_reacher_planseed11_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/tab4_td_jepa_reacher_planseed13_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/tab4_td_jepa_reacher_planseed17_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/tab4_td_jepa_reacher_planseed19_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/tab4_td_jepa_reacher_planseed23_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/tab4_td_jepa_reacher_planseed29_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/tab4_td_jepa_reacher_planseed31_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/tab4_td_jepa_reacher_planseed37_val.txt"
+        ]
+      },
+      "l2": {
+        "display_name": "latent_l2",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          96.0,
+          98.0,
+          94.0,
+          92.0,
+          96.0,
+          92.0,
+          98.0,
+          92.0,
+          94.0,
+          98.0
+        ],
+        "mean_percent": 95.0,
+        "std_percent": 2.5385910352879693,
+        "paths": [
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_l2_planseed20260714_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_l2_planseed7_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_l2_planseed11_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_l2_planseed13_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_l2_planseed17_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_l2_planseed19_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_l2_planseed23_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_l2_planseed29_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_l2_planseed31_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_l2_planseed37_val.txt"
+        ]
+      },
+      "blend010": {
+        "display_name": "blend_alpha_0.10",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          94.0,
+          96.0,
+          94.0,
+          94.0,
+          98.0,
+          92.0,
+          98.0,
+          98.0,
+          96.0,
+          96.0
+        ],
+        "mean_percent": 95.6,
+        "std_percent": 2.065591117977289,
+        "paths": [
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_blend010_planseed20260714_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_blend010_planseed7_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_blend010_planseed11_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_blend010_planseed13_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_blend010_planseed17_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_blend010_planseed19_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_blend010_planseed23_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_blend010_planseed29_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_blend010_planseed31_val.txt",
+          "$STABLEWM_HOME/dmc/temporal_distance/seed_3072_10ep/costcomp_reacher_blend010_planseed37_val.txt"
+        ]
+      }
+    },
+    "pusht": {
+      "dpsi": {
+        "display_name": "d_psi",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          70.0,
+          66.0,
+          72.0,
+          66.0,
+          70.0,
+          70.0,
+          68.0,
+          70.0,
+          68.0,
+          70.0
+        ],
+        "mean_percent": 69.0,
+        "std_percent": 1.9436506316151,
+        "paths": [
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_dpsi_planseed20260714_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_dpsi_planseed7_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_dpsi_planseed11_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_dpsi_planseed13_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_dpsi_planseed17_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_dpsi_planseed19_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_dpsi_planseed23_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_dpsi_planseed29_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_dpsi_planseed31_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_dpsi_planseed37_val.txt"
+        ]
+      },
+      "l2": {
+        "display_name": "latent_l2",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          84.0,
+          90.0,
+          82.0,
+          92.0,
+          80.0,
+          90.0,
+          82.0,
+          90.0,
+          86.0,
+          84.0
+        ],
+        "mean_percent": 86.0,
+        "std_percent": 4.216370213557839,
+        "paths": [
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_l2_planseed20260714_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_l2_planseed7_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_l2_planseed11_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_l2_planseed13_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_l2_planseed17_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_l2_planseed19_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_l2_planseed23_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_l2_planseed29_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_l2_planseed31_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/costcomp_pusht_l2_planseed37_val.txt"
+        ]
+      },
+      "blend010": {
+        "display_name": "blend_alpha_0.10",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          80.0,
+          90.0,
+          78.0,
+          84.0,
+          80.0,
+          88.0,
+          84.0,
+          84.0,
+          82.0,
+          84.0
+        ],
+        "mean_percent": 83.4,
+        "std_percent": 3.6575644598253874,
+        "paths": [
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/tab4_td_jepa_pusht_planseed20260714_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/tab4_td_jepa_pusht_planseed7_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/tab4_td_jepa_pusht_planseed11_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/tab4_td_jepa_pusht_planseed13_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/tab4_td_jepa_pusht_planseed17_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/tab4_td_jepa_pusht_planseed19_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/tab4_td_jepa_pusht_planseed23_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/tab4_td_jepa_pusht_planseed29_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/tab4_td_jepa_pusht_planseed31_val.txt",
+          "$STABLEWM_HOME/pusht/td_jepa/seed_3072_10ep/tab4_td_jepa_pusht_planseed37_val.txt"
+        ]
+      }
+    },
+    "cube": {
+      "dpsi": {
+        "display_name": "d_psi",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          74.0,
+          78.0,
+          78.0,
+          76.0,
+          76.0,
+          80.0,
+          76.0,
+          76.0,
+          78.0,
+          78.0
+        ],
+        "mean_percent": 77.0,
+        "std_percent": 1.699673171197595,
+        "paths": [
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_dpsi_planseed20260714_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_dpsi_planseed7_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_dpsi_planseed11_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_dpsi_planseed13_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_dpsi_planseed17_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_dpsi_planseed19_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_dpsi_planseed23_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_dpsi_planseed29_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_dpsi_planseed31_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_dpsi_planseed37_val.txt"
+        ]
+      },
+      "l2": {
+        "display_name": "latent_l2",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          80.0,
+          84.0,
+          86.0,
+          82.0,
+          86.0,
+          78.0,
+          84.0,
+          82.0,
+          82.0,
+          78.0
+        ],
+        "mean_percent": 82.2,
+        "std_percent": 2.898275349237888,
+        "paths": [
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_l2_planseed20260714_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_l2_planseed7_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_l2_planseed11_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_l2_planseed13_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_l2_planseed17_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_l2_planseed19_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_l2_planseed23_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_l2_planseed29_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_l2_planseed31_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/costcomp_cube_l2_planseed37_val.txt"
+        ]
+      },
+      "blend010": {
+        "display_name": "blend_alpha_0.10",
+        "n": 10,
+        "planning_seeds": [
+          20260714,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37
+        ],
+        "success_rates_percent": [
+          82.0,
+          84.0,
+          80.0,
+          78.0,
+          86.0,
+          84.0,
+          76.0,
+          82.0,
+          80.0,
+          80.0
+        ],
+        "mean_percent": 81.2,
+        "std_percent": 3.0110906108363245,
+        "paths": [
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/tab4_td_jepa_cube_planseed20260714_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/tab4_td_jepa_cube_planseed7_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/tab4_td_jepa_cube_planseed11_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/tab4_td_jepa_cube_planseed13_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/tab4_td_jepa_cube_planseed17_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/tab4_td_jepa_cube_planseed19_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/tab4_td_jepa_cube_planseed23_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/tab4_td_jepa_cube_planseed29_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/tab4_td_jepa_cube_planseed31_val.txt",
+          "$STABLEWM_HOME/ogb/temporal_distance/seed_3072_10ep/tab4_td_jepa_cube_planseed37_val.txt"
+        ]
+      }
+    }
+  },
+  "paired_comparisons": {
+    "tworoom": {
+      "dpsi_vs_l2": {
+        "mean_difference_points": 1.0,
+        "std_difference_points": 1.4142135623730951,
+        "paired_t_statistic": 2.23606797749979,
+        "paired_t_pvalue": 0.052177242798819065
+      },
+      "blend010_vs_dpsi": {
+        "mean_difference_points": 0.0,
+        "std_difference_points": 0.0,
+        "paired_t_statistic": NaN,
+        "paired_t_pvalue": NaN
+      },
+      "blend010_vs_l2": {
+        "mean_difference_points": 1.0,
+        "std_difference_points": 1.4142135623730951,
+        "paired_t_statistic": 2.23606797749979,
+        "paired_t_pvalue": 0.052177242798819065
+      }
+    },
+    "reacher": {
+      "dpsi_vs_l2": {
+        "mean_difference_points": 2.0,
+        "std_difference_points": 3.7712361663282534,
+        "paired_t_statistic": 1.6770509831248421,
+        "paired_t_pvalue": 0.12784645426866614
+      },
+      "blend010_vs_dpsi": {
+        "mean_difference_points": -1.4,
+        "std_difference_points": 2.9888682361946524,
+        "paired_t_statistic": -1.4812257933030561,
+        "paired_t_pvalue": 0.17268508962953896
+      },
+      "blend010_vs_l2": {
+        "mean_difference_points": 0.6,
+        "std_difference_points": 2.503331114069145,
+        "paired_t_statistic": 0.757936728959867,
+        "paired_t_pvalue": 0.4678698063949911
+      }
+    },
+    "pusht": {
+      "dpsi_vs_l2": {
+        "mean_difference_points": -17.0,
+        "std_difference_points": 5.517648452415616,
+        "paired_t_statistic": -9.743049178736094,
+        "paired_t_pvalue": 4.4420444952455414e-06
+      },
+      "blend010_vs_dpsi": {
+        "mean_difference_points": 14.4,
+        "std_difference_points": 5.059644256269407,
+        "paired_t_statistic": 9.0,
+        "paired_t_pvalue": 8.538051223166285e-06
+      },
+      "blend010_vs_l2": {
+        "mean_difference_points": -2.6,
+        "std_difference_points": 3.1340424729448424,
+        "paired_t_statistic": -2.6234238965856185,
+        "paired_t_pvalue": 0.027655239086163165
+      }
+    },
+    "cube": {
+      "dpsi_vs_l2": {
+        "mean_difference_points": -5.2,
+        "std_difference_points": 3.675746333890726,
+        "paired_t_statistic": -4.473606810475954,
+        "paired_t_pvalue": 0.0015466034404827086
+      },
+      "blend010_vs_dpsi": {
+        "mean_difference_points": 4.2,
+        "std_difference_points": 3.190262963734773,
+        "paired_t_statistic": 4.1631571828670655,
+        "paired_t_pvalue": 0.0024362556057854648
+      },
+      "blend010_vs_l2": {
+        "mean_difference_points": -1.0,
+        "std_difference_points": 4.136557881996952,
+        "paired_t_statistic": -0.7644707871564383,
+        "paired_t_pvalue": 0.46415789574706223
+      }
+    }
+  }
+}

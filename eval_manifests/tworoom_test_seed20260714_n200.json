@@ -1,0 +1,807 @@
+{
+  "dataset_name": "tworoom",
+  "seed": 20260714,
+  "goal_offset_steps": 25,
+  "indices": [
+    {
+      "episode": 16,
+      "start": 40
+    },
+    {
+      "episode": 36,
+      "start": 59
+    },
+    {
+      "episode": 57,
+      "start": 48
+    },
+    {
+      "episode": 127,
+      "start": 16
+    },
+    {
+      "episode": 229,
+      "start": 46
+    },
+    {
+      "episode": 242,
+      "start": 74
+    },
+    {
+      "episode": 402,
+      "start": 3
+    },
+    {
+      "episode": 416,
+      "start": 8
+    },
+    {
+      "episode": 418,
+      "start": 65
+    },
+    {
+      "episode": 433,
+      "start": 4
+    },
+    {
+      "episode": 530,
+      "start": 17
+    },
+    {
+      "episode": 574,
+      "start": 32
+    },
+    {
+      "episode": 734,
+      "start": 32
+    },
+    {
+      "episode": 782,
+      "start": 2
+    },
+    {
+      "episode": 915,
+      "start": 27
+    },
+    {
+      "episode": 917,
+      "start": 51
+    },
+    {
+      "episode": 925,
+      "start": 2
+    },
+    {
+      "episode": 963,
+      "start": 55
+    },
+    {
+      "episode": 967,
+      "start": 26
+    },
+    {
+      "episode": 1026,
+      "start": 9
+    },
+    {
+      "episode": 1057,
+      "start": 50
+    },
+    {
+      "episode": 1101,
+      "start": 41
+    },
+    {
+      "episode": 1110,
+      "start": 14
+    },
+    {
+      "episode": 1118,
+      "start": 58
+    },
+    {
+      "episode": 1120,
+      "start": 51
+    },
+    {
+      "episode": 1139,
+      "start": 49
+    },
+    {
+      "episode": 1140,
+      "start": 13
+    },
+    {
+      "episode": 1297,
+      "start": 69
+    },
+    {
+      "episode": 1309,
+      "start": 47
+    },
+    {
+      "episode": 1413,
+      "start": 70
+    },
+    {
+      "episode": 1417,
+      "start": 65
+    },
+    {
+      "episode": 1598,
+      "start": 11
+    },
+    {
+      "episode": 1638,
+      "start": 21
+    },
+    {
+      "episode": 1681,
+      "start": 49
+    },
+    {
+      "episode": 1797,
+      "start": 52
+    },
+    {
+      "episode": 1961,
+      "start": 67
+    },
+    {
+      "episode": 2013,
+      "start": 36
+    },
+    {
+      "episode": 2062,
+      "start": 45
+    },
+    {
+      "episode": 2082,
+      "start": 13
+    },
+    {
+      "episode": 2128,
+      "start": 49
+    },
+    {
+      "episode": 2144,
+      "start": 30
+    },
+    {
+      "episode": 2181,
+      "start": 30
+    },
+    {
+      "episode": 2224,
+      "start": 43
+    },
+    {
+      "episode": 2289,
+      "start": 34
+    },
+    {
+      "episode": 2316,
+      "start": 14
+    },
+    {
+      "episode": 2364,
+      "start": 45
+    },
+    {
+      "episode": 2416,
+      "start": 62
+    },
+    {
+      "episode": 2492,
+      "start": 11
+    },
+    {
+      "episode": 2496,
+      "start": 39
+    },
+    {
+      "episode": 2711,
+      "start": 50
+    },
+    {
+      "episode": 2756,
+      "start": 23
+    },
+    {
+      "episode": 2780,
+      "start": 34
+    },
+    {
+      "episode": 2927,
+      "start": 54
+    },
+    {
+      "episode": 2940,
+      "start": 37
+    },
+    {
+      "episode": 2943,
+      "start": 51
+    },
+    {
+      "episode": 3082,
+      "start": 50
+    },
+    {
+      "episode": 3163,
+      "start": 15
+    },
+    {
+      "episode": 3173,
+      "start": 49
+    },
+    {
+      "episode": 3211,
+      "start": 52
+    },
+    {
+      "episode": 3298,
+      "start": 15
+    },
+    {
+      "episode": 3321,
+      "start": 73
+    },
+    {
+      "episode": 3358,
+      "start": 57
+    },
+    {
+      "episode": 3380,
+      "start": 20
+    },
+    {
+      "episode": 3438,
+      "start": 71
+    },
+    {
+      "episode": 3440,
+      "start": 36
+    },
+    {
+      "episode": 3449,
+      "start": 7
+    },
+    {
+      "episode": 3469,
+      "start": 13
+    },
+    {
+      "episode": 3620,
+      "start": 67
+    },
+    {
+      "episode": 3657,
+      "start": 28
+    },
+    {
+      "episode": 3659,
+      "start": 50
+    },
+    {
+      "episode": 3697,
+      "start": 2
+    },
+    {
+      "episode": 3718,
+      "start": 42
+    },
+    {
+      "episode": 3732,
+      "start": 0
+    },
+    {
+      "episode": 3751,
+      "start": 21
+    },
+    {
+      "episode": 3767,
+      "start": 50
+    },
+    {
+      "episode": 3849,
+      "start": 70
+    },
+    {
+      "episode": 3888,
+      "start": 29
+    },
+    {
+      "episode": 3911,
+      "start": 31
+    },
+    {
+      "episode": 3993,
+      "start": 29
+    },
+    {
+      "episode": 3999,
+      "start": 29
+    },
+    {
+      "episode": 4019,
+      "start": 61
+    },
+    {
+      "episode": 4272,
+      "start": 41
+    },
+    {
+      "episode": 4274,
+      "start": 21
+    },
+    {
+      "episode": 4280,
+      "start": 65
+    },
+    {
+      "episode": 4296,
+      "start": 50
+    },
+    {
+      "episode": 4412,
+      "start": 28
+    },
+    {
+      "episode": 4417,
+      "start": 41
+    },
+    {
+      "episode": 4482,
+      "start": 29
+    },
+    {
+      "episode": 4500,
+      "start": 56
+    },
+    {
+      "episode": 4584,
+      "start": 24
+    },
+    {
+      "episode": 4833,
+      "start": 47
+    },
+    {
+      "episode": 4848,
+      "start": 21
+    },
+    {
+      "episode": 4901,
+      "start": 20
+    },
+    {
+      "episode": 4928,
+      "start": 21
+    },
+    {
+      "episode": 4956,
+      "start": 18
+    },
+    {
+      "episode": 4960,
+      "start": 52
+    },
+    {
+      "episode": 4969,
+      "start": 48
+    },
+    {
+      "episode": 5013,
+      "start": 30
+    },
+    {
+      "episode": 5088,
+      "start": 69
+    },
+    {
+      "episode": 5150,
+      "start": 28
+    },
+    {
+      "episode": 5156,
+      "start": 64
+    },
+    {
+      "episode": 5162,
+      "start": 25
+    },
+    {
+      "episode": 5349,
+      "start": 51
+    },
+    {
+      "episode": 5350,
+      "start": 58
+    },
+    {
+      "episode": 5361,
+      "start": 32
+    },
+    {
+      "episode": 5431,
+      "start": 44
+    },
+    {
+      "episode": 5509,
+      "start": 22
+    },
+    {
+      "episode": 5654,
+      "start": 12
+    },
+    {
+      "episode": 5665,
+      "start": 19
+    },
+    {
+      "episode": 5698,
+      "start": 62
+    },
+    {
+      "episode": 5707,
+      "start": 7
+    },
+    {
+      "episode": 5742,
+      "start": 3
+    },
+    {
+      "episode": 5758,
+      "start": 14
+    },
+    {
+      "episode": 5868,
+      "start": 1
+    },
+    {
+      "episode": 5891,
+      "start": 58
+    },
+    {
+      "episode": 5962,
+      "start": 33
+    },
+    {
+      "episode": 5988,
+      "start": 24
+    },
+    {
+      "episode": 5995,
+      "start": 25
+    },
+    {
+      "episode": 5997,
+      "start": 27
+    },
+    {
+      "episode": 6014,
+      "start": 47
+    },
+    {
+      "episode": 6093,
+      "start": 6
+    },
+    {
+      "episode": 6099,
+      "start": 73
+    },
+    {
+      "episode": 6130,
+      "start": 52
+    },
+    {
+      "episode": 6194,
+      "start": 33
+    },
+    {
+      "episode": 6321,
+      "start": 23
+    },
+    {
+      "episode": 6328,
+      "start": 41
+    },
+    {
+      "episode": 6364,
+      "start": 68
+    },
+    {
+      "episode": 6430,
+      "start": 36
+    },
+    {
+      "episode": 6526,
+      "start": 44
+    },
+    {
+      "episode": 6527,
+      "start": 68
+    },
+    {
+      "episode": 6584,
+      "start": 11
+    },
+    {
+      "episode": 6669,
+      "start": 42
+    },
+    {
+      "episode": 6680,
+      "start": 45
+    },
+    {
+      "episode": 6726,
+      "start": 10
+    },
+    {
+      "episode": 6786,
+      "start": 27
+    },
+    {
+      "episode": 6953,
+      "start": 73
+    },
+    {
+      "episode": 6988,
+      "start": 21
+    },
+    {
+      "episode": 7011,
+      "start": 11
+    },
+    {
+      "episode": 7033,
+      "start": 39
+    },
+    {
+      "episode": 7173,
+      "start": 48
+    },
+    {
+      "episode": 7201,
+      "start": 5
+    },
+    {
+      "episode": 7275,
+      "start": 27
+    },
+    {
+      "episode": 7368,
+      "start": 6
+    },
+    {
+      "episode": 7372,
+      "start": 53
+    },
+    {
+      "episode": 7375,
+      "start": 75
+    },
+    {
+      "episode": 7385,
+      "start": 41
+    },
+    {
+      "episode": 7421,
+      "start": 8
+    },
+    {
+      "episode": 7470,
+      "start": 53
+    },
+    {
+      "episode": 7482,
+      "start": 61
+    },
+    {
+      "episode": 7505,
+      "start": 23
+    },
+    {
+      "episode": 7508,
+      "start": 10
+    },
+    {
+      "episode": 7768,
+      "start": 32
+    },
+    {
+      "episode": 7837,
+      "start": 40
+    },
+    {
+      "episode": 8049,
+      "start": 46
+    },
+    {
+      "episode": 8057,
+      "start": 32
+    },
+    {
+      "episode": 8060,
+      "start": 21
+    },
+    {
+      "episode": 8096,
+      "start": 47
+    },
+    {
+      "episode": 8188,
+      "start": 70
+    },
+    {
+      "episode": 8252,
+      "start": 19
+    },
+    {
+      "episode": 8386,
+      "start": 19
+    },
+    {
+      "episode": 8429,
+      "start": 45
+    },
+    {
+      "episode": 8496,
+      "start": 57
+    },
+    {
+      "episode": 8532,
+      "start": 23
+    },
+    {
+      "episode": 8532,
+      "start": 48
+    },
+    {
+      "episode": 8534,
+      "start": 3
+    },
+    {
+      "episode": 8548,
+      "start": 40
+    },
+    {
+      "episode": 8592,
+      "start": 30
+    },
+    {
+      "episode": 8632,
+      "start": 43
+    },
+    {
+      "episode": 8696,
+      "start": 9
+    },
+    {
+      "episode": 8717,
+      "start": 46
+    },
+    {
+      "episode": 8735,
+      "start": 34
+    },
+    {
+      "episode": 8757,
+      "start": 9
+    },
+    {
+      "episode": 8761,
+      "start": 73
+    },
+    {
+      "episode": 8796,
+      "start": 16
+    },
+    {
+      "episode": 8817,
+      "start": 12
+    },
+    {
+      "episode": 8858,
+      "start": 2
+    },
+    {
+      "episode": 8932,
+      "start": 22
+    },
+    {
+      "episode": 8932,
+      "start": 62
+    },
+    {
+      "episode": 8958,
+      "start": 29
+    },
+    {
+      "episode": 9059,
+      "start": 17
+    },
+    {
+      "episode": 9112,
+      "start": 16
+    },
+    {
+      "episode": 9165,
+      "start": 25
+    },
+    {
+      "episode": 9200,
+      "start": 36
+    },
+    {
+      "episode": 9273,
+      "start": 20
+    },
+    {
+      "episode": 9301,
+      "start": 66
+    },
+    {
+      "episode": 9309,
+      "start": 49
+    },
+    {
+      "episode": 9400,
+      "start": 60
+    },
+    {
+      "episode": 9404,
+      "start": 47
+    },
+    {
+      "episode": 9418,
+      "start": 33
+    },
+    {
+      "episode": 9440,
+      "start": 7
+    },
+    {
+      "episode": 9593,
+      "start": 6
+    },
+    {
+      "episode": 9660,
+      "start": 24
+    },
+    {
+      "episode": 9682,
+      "start": 33
+    },
+    {
+      "episode": 9766,
+      "start": 3
+    },
+    {
+      "episode": 9783,
+      "start": 49
+    },
+    {
+      "episode": 9793,
+      "start": 22
+    },
+    {
+      "episode": 9817,
+      "start": 10
+    },
+    {
+      "episode": 9819,
+      "start": 32
+    },
+    {
+      "episode": 9837,
+      "start": 20
+    },
+    {
+      "episode": 9898,
+      "start": 61
+    }
+  ]
+}

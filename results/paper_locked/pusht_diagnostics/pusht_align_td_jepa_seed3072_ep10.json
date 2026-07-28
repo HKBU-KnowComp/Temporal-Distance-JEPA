@@ -1,0 +1,37 @@
+{
+  "policy": "pusht/td_jepa/seed_3072_10ep/weights_epoch_10.pt",
+  "dataset_name": "pusht_expert_train",
+  "num_pairs": 1000,
+  "max_tau": 25,
+  "near_goal_steps": 10,
+  "far_goal_steps": 25,
+  "splits": [
+    {
+      "name": "all",
+      "count": 1000,
+      "dpsi_spearman_tau": 0.894076224333344,
+      "l2_spearman_tau": 0.7676640667447798,
+      "dpsi_mean": 2.4124648571014404,
+      "l2_mean": 103.46149444580078,
+      "tau_mean": 11.207
+    },
+    {
+      "name": "far_from_goal",
+      "count": 682,
+      "dpsi_spearman_tau": 0.9112766196772042,
+      "l2_spearman_tau": 0.7730330772302955,
+      "dpsi_mean": 2.4695467948913574,
+      "l2_mean": 107.92351531982422,
+      "tau_mean": 11.690615835777127
+    },
+    {
+      "name": "near_goal",
+      "count": 195,
+      "dpsi_spearman_tau": 0.8297274814825168,
+      "l2_spearman_tau": 0.6888210870128472,
+      "dpsi_mean": 2.136125326156616,
+      "l2_mean": 86.76539611816406,
+      "tau_mean": 9.21025641025641
+    }
+  ]
+}
