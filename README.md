@@ -1,7 +1,7 @@
-# TD-JEPA
+# Temporal-Distance-JEPA
 ### Temporal-Distance JEPA: Plan-Aware Representation Learning for Latent World Model Predictive Control
 
-**TD-JEPA** keeps the LeWM encoder–predictor and SIGReg backbone, and mines a directed temporal cost from reward-free demonstration logs. Same-trajectory step order supplies positive targets, cross-trajectory pairs act as heuristic negatives, and a rollout-consistency term matches the planner horizon. At plan time the mined cost \(d_\psi\) is deployed on topology-dominated tasks (Two-Room, Reacher), while contact-rich tasks (Push-T, OGB-Cube) plan with latent \(\ell_2\) on the same temporally trained checkpoint.
+**Temporal-Distance-JEPA** keeps the LeWM encoder–predictor and SIGReg backbone, and mines a directed temporal cost from reward-free demonstration logs. Same-trajectory step order supplies positive targets, cross-trajectory pairs act as heuristic negatives, and a rollout-consistency term matches the planner horizon. At plan time the mined cost \(d_\psi\) is deployed on topology-dominated tasks (Two-Room, Reacher), while contact-rich tasks (Push-T, OGB-Cube) plan with latent \(\ell_2\) on the same temporally trained checkpoint.
 
 This repository is a public paper-reproduction release. Cluster/Slurm wrappers are intentionally omitted; use the Python CLI below and wrap it for your own scheduler if needed.
 
