@@ -1,7 +1,7 @@
 # Temporal-Distance-JEPA
 ### Temporal-Distance-JEPA: Plan-Aware Representation Learning for Latent World Model Predictive Control
 
-**Temporal-Distance-JEPA** keeps the LeWM encoder–predictor and SIGReg backbone, and mines a directed temporal cost from reward-free demonstration logs. Same-trajectory step order supplies positive targets, cross-trajectory pairs act as heuristic negatives, and a rollout-consistency term matches the planner horizon. At plan time the mined cost \(d_\psi\) is deployed on topology-dominated tasks (Two-Room, Reacher), while contact-rich tasks (Push-T, OGB-Cube) plan with latent \(\ell_2\) on the same temporally trained checkpoint.
+**Temporal-Distance-JEPA** keeps the LeWM encoder–predictor and SIGReg backbone, and mines a directed temporal cost from reward-free demonstration logs. Same-trajectory step order supplies positive targets, cross-trajectory pairs act as heuristic negatives, and a rollout-consistency term matches the planner horizon. At plan time the mined cost $d_\psi$ is deployed on topology-dominated tasks (Two-Room, Reacher), while contact-rich tasks (Push-T, OGB-Cube) plan with latent $\ell_2$ on the same temporally trained checkpoint.
 
 This repository is a public paper-reproduction release. Cluster/Slurm wrappers are intentionally omitted; use the Python CLI below and wrap it for your own scheduler if needed.
 
@@ -84,7 +84,7 @@ variant=td_jepa_no_rollout       # no multi-step rollout consistency
 Eval configs live under `config/eval/`. Pass `policy` as a path **relative to `$STABLEWM_HOME/checkpoints`**, including the `.pt` weights file used by this codebase:
 
 ```bash
-# Two-Room / Reacher: pure d_psi (defaults: iCEM-30)
+# Two-Room / Reacher: pure d_ψ (defaults: iCEM-30)
 python eval.py --config-name=tworoom \
   policy=tworoom/td_jepa/seed_3072_10ep/weights_epoch_10.pt \
   seed=20260714
@@ -93,7 +93,7 @@ python eval.py --config-name=reacher \
   policy=dmc/td_jepa/seed_3072_10ep/weights_epoch_10.pt \
   seed=20260714
 
-# Push-T / OGB-Cube: latent L2 on the Temporal-Distance-JEPA checkpoint (defaults: CEM)
+# Push-T / OGB-Cube: latent ℓ₂ on the Temporal-Distance-JEPA checkpoint (defaults: CEM)
 python eval.py --config-name=pusht \
   policy=pusht/td_jepa/seed_3072_10ep/weights_epoch_10.pt \
   seed=20260714
@@ -106,7 +106,7 @@ python eval.py --config-name=cube \
 Override cost or solver when needed:
 
 ```bash
-# Plan the Temporal-Distance-JEPA checkpoint with d_psi instead of L2
+# Plan the Temporal-Distance-JEPA checkpoint with d_ψ instead of ℓ₂
 python eval.py --config-name=pusht \
   policy=pusht/td_jepa/seed_3072_10ep/weights_epoch_10.pt \
   planning_cost.mode=td_jepa planning_cost.mse_blend=0.0
@@ -121,14 +121,14 @@ Locked **50-episode** manifests are shipped in `eval_manifests/` (seed `20260714
 
 `{20260714, 7, 11, 13, 17, 19, 23, 29, 31, 37}`
 
-| Env | Solver | Plan cost | Terminal weight \(w\) |
-|-----|--------|-----------|------------------------|
-| Two-Room | iCEM-30 | \(d_\psi\) | 1.0 |
-| Reacher | iCEM-30 | \(d_\psi\) | 0.3 |
-| Push-T | CEM-30 | latent \(\ell_2\) | 1.0 |
-| OGB-Cube | CEM-10 | latent \(\ell_2\) | 1.0 |
+| Env | Solver | Plan cost | Terminal weight $w$ |
+|-----|--------|-----------|---------------------|
+| Two-Room | iCEM-30 | $d_\psi$ | 1.0 |
+| Reacher | iCEM-30 | $d_\psi$ | 0.3 |
+| Push-T | CEM-30 | latent $\ell_2$ | 1.0 |
+| OGB-Cube | CEM-10 | latent $\ell_2$ | 1.0 |
 
-Shared planner budget: horizon \(H{=}5\), goal offset \(G{=}25\), 300 CEM/iCEM candidates. iCEM uses `noise_beta=2.0`, smoothing `0.1`, `n_elite_keep=5`.
+Shared planner budget: horizon $H=5$, goal offset $G=25$, 300 CEM/iCEM candidates. iCEM uses `noise_beta=2.0`, smoothing `0.1`, `n_elite_keep=5`.
 
 Compact locked summaries used in the draft tables live under:
 
@@ -141,7 +141,7 @@ Compact locked summaries used in the draft tables live under:
 # Rebuild locked manifests (requires datasets on disk)
 python scripts/make_eval_manifests.py --dataset-name pusht_expert_train
 
-# Offline planning-cost sweep (L2 vs d_psi vs blends)
+# Offline planning-cost sweep (ℓ₂ vs d_ψ vs blends)
 python scripts/sweep_planning_cost.py --env pusht \
   --policy pusht/td_jepa/seed_3072_10ep/weights_epoch_10.pt
 
@@ -170,6 +170,22 @@ python scripts/aggregate_planning_results.py \
 | `eval_manifests/` | Locked episode indices |
 | `results/` | Locked table artifacts |
 | `scripts/` | Public reproduction CLIs (no Slurm) |
+
+## Citation
+
+If you use this code, please cite:
+
+```bibtex
+@misc{bai2026temporaldistancejepaplanawarerepresentation,
+      title={Temporal-Distance JEPA: Plan-Aware Representation Learning for Latent World Model Predictive Control}, 
+      author={Jiaxin Bai and Jiaxuan Xiong},
+      year={2026},
+      eprint={2607.25337},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2607.25337}, 
+}
+```
 
 ## Notes
 
