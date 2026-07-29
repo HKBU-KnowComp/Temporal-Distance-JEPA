@@ -1,5 +1,5 @@
 # Temporal-Distance-JEPA
-### Temporal-Distance JEPA: Plan-Aware Representation Learning for Latent World Model Predictive Control
+### Temporal-Distance-JEPA: Plan-Aware Representation Learning for Latent World Model Predictive Control
 
 **Temporal-Distance-JEPA** keeps the LeWM encoder–predictor and SIGReg backbone, and mines a directed temporal cost from reward-free demonstration logs. Same-trajectory step order supplies positive targets, cross-trajectory pairs act as heuristic negatives, and a rollout-consistency term matches the planner horizon. At plan time the mined cost \(d_\psi\) is deployed on topology-dominated tasks (Two-Room, Reacher), while contact-rich tasks (Push-T, OGB-Cube) plan with latent \(\ell_2\) on the same temporally trained checkpoint.
 
@@ -48,7 +48,7 @@ Checkpoints are written under `$STABLEWM_HOME/checkpoints/<run_name>/`.
 Hydra configs live under `config/train/`. Canonical method variant: `td_jepa`. Paper protocol uses **10 epochs**.
 
 ```bash
-# TD-JEPA (main method)
+# Temporal-Distance-JEPA (main method; Hydra variant key remains td_jepa)
 python train.py --config-name=pusht_train data=pusht variant=td_jepa seed=3072 \
   output_model_name=pusht/td_jepa/seed_3072_10ep
 
@@ -93,7 +93,7 @@ python eval.py --config-name=reacher \
   policy=dmc/td_jepa/seed_3072_10ep/weights_epoch_10.pt \
   seed=20260714
 
-# Push-T / OGB-Cube: latent L2 on the TD-JEPA checkpoint (defaults: CEM)
+# Push-T / OGB-Cube: latent L2 on the Temporal-Distance-JEPA checkpoint (defaults: CEM)
 python eval.py --config-name=pusht \
   policy=pusht/td_jepa/seed_3072_10ep/weights_epoch_10.pt \
   seed=20260714
@@ -106,7 +106,7 @@ python eval.py --config-name=cube \
 Override cost or solver when needed:
 
 ```bash
-# Plan the TD-JEPA checkpoint with d_psi instead of L2
+# Plan the Temporal-Distance-JEPA checkpoint with d_psi instead of L2
 python eval.py --config-name=pusht \
   policy=pusht/td_jepa/seed_3072_10ep/weights_epoch_10.pt \
   planning_cost.mode=td_jepa planning_cost.mse_blend=0.0
@@ -173,6 +173,6 @@ python scripts/aggregate_planning_results.py \
 
 ## Notes
 
-- Method name in configs and scripts is **TD-JEPA** (`variant=td_jepa`).
+- Display / paper name: **Temporal-Distance-JEPA**. Config and checkpoint short names remain `td_jepa` (e.g. `variant=td_jepa`, `planning_cost.mode=td_jepa`).
 - Historical contrastive SoftJEPA loss helpers may still appear in `losses.py` / `jepa.py` for compatibility; they are not part of the public paper configs.
 - Do not commit local `outputs/`, `logs/`, or checkpoints; see `.gitignore`.
